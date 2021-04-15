@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Color Variables */
+/* ---------------------------------------------- */
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --font-family:'Poppins', sans-serif;
+    --font-size:15px;
+    
+}
+
+
+/* Color Variables */
+/* ---------------------------------------------- */
+
+body {
+    font-family: var(--font-family);
+    margin: auto;
+    background-color: var(--Very-Light-Gray);
+}
+
+/* Intro section */
+/* ---------------------------------------------- */
+
+
+.intro {
+    text-align: center;
+    padding: 2em 24em;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    margin-bottom: 7em;
+}
+h1 {
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 2em;
+    
+}
+span {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 2em;
+    color: var(--Very-Dark-Blue);
+  
+}
+.intro-paragraph {
+    font-size: 15px;
+    margin-top: 15px;
+    color: var(--Grayish-Blue);
+}
+
+/* Cards*/
+/* ---------------------------------------------- */
+.grid-container {
+    margin:0em 6em;
+}
+
+.grid-container > div {
+    background-color: #fff;
+    padding: 1.5em;
+
+}
+
+.grid-container > div > p {
+    font-size: 14px;
+    font-weight: 400;
+    color:var(--Grayish-Blue);
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.grid-container > .container {
+    width: 330px;
+    height: 220px;
+    box-shadow: 2px 2px 2px 1px rgba(170, 170, 170, 0.2);
+}
+
+
+.supervisor {
+    border-top: 4px solid var(--Cyan);
+    display: inline-block;
+    position: relative;
+    left: 10%;
+
+}
+
+.team-builder {
+    border-top: 4px solid var(--Red);
+    position:absolute;
+    left:38%;
+    top:210px;
+    
+}
+
+.karma {
+    border-top: 4px solid var(--Orange);
+    position:absolute;
+    left:38%;
+    top:73%;
+}
+
+.calculator {
+    border-top: 4px solid var(--Blue);
+    position:absolute;
+    right: 10.5%;
+    top:50%;
+}
+
+.img-icon {
+    text-align: right;
+}
+
+footer {
+    margin: 12em 0em 1em 0em;
+} 
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ } 
+
+ /* Responsive  */
+
+@media screen and (max-width: 1024px) {
+
+    body {
+        margin: 25px;
+    }
+    .intro {
+        text-align: center;
+        padding:20px 0px;
+    }
+    h1 {
+        font-size: 1.5em;
+        font-weight: 200;
+        font-family: var(--font-family);
+
+    }
+    span {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 1.5em;
+        color: var(--Very-Dark-Blue);
+
+    }
+
+    .intro-paragraph {
+        font-size: 16px;
+        margin-top: 15px;
+        color: var(--Grayish-Blue);
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1em;
+    }
+    .grid-container > div {
+        background-color: #fff;
+        padding: 1.5em;
+        margin-bottom: 20px;
+    
+    }
+    .grid-container > div > p {
+        font-size: 14px;
+        font-weight: 400;
+        color:var(--Grayish-Blue);
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .grid-container > .container {
+        width: 330px;
+        height: 220px;
+        box-shadow: 2px 2px 2px 1px rgba(170, 170, 170, 0.2);
+        position: relative;
+    }
+
+    .supervisor {
+        border-top: 4px solid var(--Cyan);
+        display: inline-block;
+        position: relative;
+        left: 0;
+        top: 0;
+
+
+    }
+
+    .team-builder {
+        border-top: 4px solid var(--Red);
+        display: inline-block;
+        position: relative;
+        left: 0;
+        top: 0;
+
+    }
+
+    .karma {
+        border-top: 4px solid var(--Orange);
+        display: inline-block;
+        position: relative;
+        left: 0;
+        top: 0;
+
+    }
+
+    .calculator {
+        border-top: 4px solid var(--Blue);
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    
+    .img-icon {
+        text-align: right;
+    }
+
+    footer {
+        margin: 0;
+    }
+
+ }
